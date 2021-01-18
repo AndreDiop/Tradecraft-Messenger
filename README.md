@@ -1,5 +1,5 @@
 
-# Take Notes
+# Whisper
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
           
  ##Table of Contents for Take Notes
@@ -19,9 +19,14 @@
 [Licenses](#Licenses)
           
 # About
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+This app was originally for users that need to keep track of information that is easy to forget or unable to be recalled. 
+I have since rebranded it as an app the allows users to communicate data without having that data stored where it can be retrieved by bad actors. The data enter is persistent and allows users to have written information available when the app is closed.
 ## Installation
-Coming soon.
+[Users will visit the site](https://dashboard.heroku.com/apps/glacial-lowlands-01995) and click on *get started* 
+
+Users wil be presented with a screen to enter a title and body for their messages.
+
+After entering data in the 
 ## Usage
 Coming soon also
 ## Test Instructions
