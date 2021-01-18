@@ -4,6 +4,7 @@ const path = require("path");
 const fs = require("fs");
 const PORT = 8080;
 const { v4: uuidv4 } = require("uuid");
+var iterator = 0;
 
 // ADD MIDDLEWARE
 app.use(express.urlencoded({ extended: true }));
@@ -27,17 +28,19 @@ app.get("/api/notes", function (req, res) {
 
 //* POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
 app.post("/api/notes", function (req, res) {
-  let newNote = req.body;
-  newNote.id = uuidv4();
-  fs.readFile("./db/db.json", (err, data) => {
-    if (err) throw err;
-    let notes = JSON.parse(data);
-    notes.push(newNote);
-    fs.writeFile("./db/db.json", JSON.stringify(notes), (err) => {
+  const newNote = req.body;
+  //   const newNote.id = uuidv4();
+  newNote.id = iterator;
+  iterator++,
+    fs.readFile("./db/db.json", (err, data) => {
       if (err) throw err;
-      res.json(notes);
+      let notes = JSON.parse(data);
+      notes.push(newNote);
+      fs.writeFile("./db/db.json", JSON.stringify(notes), (err) => {
+        if (err) throw err;
+        res.json(notes);
+      });
     });
-  });
 });
 
 //   * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete.
