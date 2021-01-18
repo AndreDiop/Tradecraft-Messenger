@@ -4,7 +4,6 @@ const path = require("path");
 const fs = require("fs");
 const PORT = 8080;
 const { v4: uuidv4 } = require("uuid");
-// const iterator = 1;
 
 // ADD MIDDLEWARE
 app.use(express.urlencoded({ extended: true }));
@@ -28,11 +27,11 @@ app.get("/api/notes", (req, res) => {
   });
 });
 
-//* POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+//   Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
 app.post("/api/notes", function (req, res) {
   // Receive a new note to save on the request body
   let newNote = req.body;
-  //   Gives each note a unique `id` when it's saved
+  // Gives each note a unique `id` when it's saved
   newNote.id = uuidv4();
   fs.readFile("./db/db.json", (err, data) => {
     if (err) throw err;
@@ -46,10 +45,7 @@ app.post("/api/notes", function (req, res) {
     });
   });
 });
-//   * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete.
-// This means you'll need to find a way to .
-// In order to delete a note, you'll need to , remove the note with the given `id` property, and then
-
+//  Will receive a query parameter containing the id of a note to delete.
 app.delete("/api/notes/:id", (req, res) => {
   const id = req.params.id;
   //   Read all notes from the `db.json` file
@@ -61,7 +57,7 @@ app.delete("/api/notes/:id", (req, res) => {
       return id !== note.id;
     });
     // Rewrite the notes to the `db.json` file.
-    fs.writeFile("./db/db.json", JSON.stringify(newNotesArr), (err) => {
+    fs.writeFile("./db/db.json", JSON.stringify(notesArray), (err) => {
       if (err) throw err;
       res.json(notesArray);
     });
