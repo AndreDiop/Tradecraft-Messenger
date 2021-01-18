@@ -2,7 +2,7 @@
 # Whisper
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
           
- ##Table of Contents for Take Notes
+ ## Table of Contents for Take Notes
           
 [Description](#About)
           
@@ -22,15 +22,21 @@
 This app was originally for users that need to keep track of information that is easy to forget or unable to be recalled. 
 I have since rebranded it as an app the allows users to communicate data without having that data stored where it can be retrieved by bad actors. The data enter is persistent and allows users to have written information available when the app is closed.
 ## Installation
-[Users will visit the site](https://dashboard.heroku.com/apps/glacial-lowlands-01995) and click on *get started* 
+Users will access the site through the deployed [link](https://dashboard.heroku.com/apps/glacial-lowlands-01995)
+
+This app requires the following packages, [NPM](https://docs.npmjs.com/cli/v6/commands/npm-install), [UUID](https://www.npmjs.com/package/uuid), [FS](https://www.npmjs.com/package/file-system), [Express](https://www.npmjs.com/package/express)
+
+## Usage
+Users will visit the [site](https://dashboard.heroku.com/apps/glacial-lowlands-01995) and click on *get started* 
 
 Users wil be presented with a screen to enter a title and body for their messages.
 
-After entering data in the 
-## Usage
-Coming soon also
+A save icon will become available once text has been entered in the message field.
+
+Once the message is saved, it will be available to be viewed or deleted by clicking the *trash icon*
+
 ## Test Instructions
-No testing instructions yet
+There are no known errors in the code.
           
           
 ## Contributing
