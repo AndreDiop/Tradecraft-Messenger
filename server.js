@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const fs = require("fs");
-const PORT = 8080;
 const { v4: uuidv4 } = require("uuid");
+const PORT = process.env.PORT || 8080;
 
 // ADD MIDDLEWARE
 app.use(express.urlencoded({ extended: true }));
