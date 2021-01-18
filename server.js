@@ -9,6 +9,7 @@ var iterator = 0;
 // ADD MIDDLEWARE
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static("public"));
 
 // //   * GET `/notes` - Should return the `notes.html` file.
 app.get("/", function (req, res) {
@@ -42,13 +43,22 @@ app.post("/api/notes", function (req, res) {
       });
     });
 });
-
 //   * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete.
 // This means you'll need to find a way to give each note a unique `id` when it's saved.
 // In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
 // app.delete("/api/notes/:id", function (req, res) {
-//     res.sendFile(path.join(__dirname, "public", "notes.html"));
-//   });
+//   var id = req.params.id;
+
+//   console.log(req.params.id);
+
+//     for (var i = 0; i < characters.length; i++) {
+//       if (chosen === characters[i].routeName) {
+//         return res.json(characters[i]);
+//       }
+//     }
+
+//     return res.json(false);
+// });
 
 app.listen(PORT, function () {
   // Log (server-side) when our server has started
