@@ -1,4 +1,5 @@
 const express = require("express");
+const compression = require('compression')
 const app = express();
 const path = require("path");
 const fs = require("fs");
@@ -6,6 +7,7 @@ const { v4: uuidv4 } = require("uuid");
 const PORT = process.env.PORT || 8080;
 
 // ADD MIDDLEWARE
+app.use(compression())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
