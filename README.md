@@ -29,7 +29,7 @@ This app requires the following packages, [NPM](https://docs.npmjs.com/cli/v6/co
 ## Usage
 Users will visit the [site](https://dashboard.heroku.com/apps/glacial-lowlands-01995) and click on *get started* 
 
-Users wil be presented with a screen to enter a title and body for their messages.
+Users will be presented with a screen to enter a title and body for their messages.
 
 A save icon will become available once text has been entered in the message field.
 
@@ -56,6 +56,4 @@ Copyright 2021
     The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-    
-    
-        
+![image](https://user-images.githubusercontent.com/73041328/110143106-dd8c4c80-7da4-11eb-9ae8-7a4a242b982b.png)
