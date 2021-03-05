@@ -1,5 +1,5 @@
 
-# Tradecraft Messages
+# Tradecraft Messenger
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
           
  ## Table of Contents for Take Notes
@@ -19,8 +19,7 @@
 [Licenses](#Licenses)
           
 # About
-This app was originally for users that need to keep track of information that is easy to forget or unable to be recalled. 
-I have since rebranded it as an app the allows users to communicate data without having that data stored where it can be retrieved by bad actors. The data enter is persistent and allows users to have written information available when the app is closed.
+This web application allows users to communicate without having that data stored where it can be retrieved by bad actors. The data enter is persistent and allows users to have written information available when the app is closed.
 ## Installation
 Users will access the site through the deployed [link](https://dashboard.heroku.com/apps/glacial-lowlands-01995)
 
