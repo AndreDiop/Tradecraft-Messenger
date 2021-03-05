@@ -19,27 +19,49 @@
 [Licenses](#Licenses)
           
 # About
-This web application allows users to communicate without having that data stored where it can be retrieved by bad actors. The data enter is persistent and allows users to have written information available when the app is closed.
-## Installation
-Users will access the site through the deployed [link](https://dashboard.heroku.com/apps/glacial-lowlands-01995)
+This web application allows users to communicate messages between one another by posting and saving notes. The data entered is persistent and allows users to have written information available when the app is closed. Design inspration was taken from the clandestine nature of CIA novels and spy drops.
 
-This app requires the following packages, [NPM](https://docs.npmjs.com/cli/v6/commands/npm-install), [UUID](https://www.npmjs.com/package/uuid), [FS](https://www.npmjs.com/package/file-system), [Express](https://www.npmjs.com/package/express)
+This application uses an express backend and save and retrieve data from a JSON file. 
+
+On the front end, this application uses a Bootstrap framework and fontAwesome for the icons
+
+## Installation
+1. Users will navigate to the [github Repository](https://github.com/AndreDiop/Tradecraft-Messenger) to clone the repository.
+
+2. To clone and run this application, you will need Git and required NPM dependancies installed on your computer. Inside of your command line editor do the following:
+
+ ```bash
+git clone https://github.com/AndreDiop/Tradecraft-Messenger.git
+
+npm install
+```
+3.Start the server instance on your local machine
+ ```bash
+
+npm start
+```
+
+
+
+This app requires the following packages, [NPM](https://docs.npmjs.com/cli/v6/commands/npm-install), [UUID](https://www.npmjs.com/package/uuid), [Compression](https://www.npmjs.com/package/compression), [Express](https://www.npmjs.com/package/express)
 
 ## Usage
-Users will visit the [site](https://dashboard.heroku.com/apps/glacial-lowlands-01995) and click on *get started* 
+1. Users will visit the [site](https://dashboard.heroku.com/apps/glacial-lowlands-01995) and click on *get started* 
 
-Users will be presented with a screen to enter a title and body for their messages.
+2. Users will be presented with a screen to enter a title and body for their messages.
 
-A save icon will become available once text has been entered in the message field.
+3. A save icon will become available once text has been entered in the message field.
 
-Once the message is saved, it will be available to be viewed or deleted by clicking the *trash icon*
+4. Once the message is saved, it will be available to be viewed or deleted by clicking the *trash icon*
+
+![image](https://media.giphy.com/media/dv2uov34rxTHudMMKZ/giphy.gif)
 
 ## Test Instructions
 There are no known errors in the code.
           
           
 ## Contributing
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with me.
+WI am open to all forms of contribution, please discuss the change you wish to make via issue or email with me.
           
 ## Questions
 You can find me on [GitHub](https://www.github.com/AndreDiop) 
