@@ -2,7 +2,7 @@
 # Tradecraft Messenger
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
           
- ## Table of Contents for Take Notes
+ ## Table of Contents for Tradecraft Messenger
           
 [Description](#About)
           
