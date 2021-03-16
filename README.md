@@ -10,7 +10,7 @@
           
 [Usage](#Usage)
           
-[Test Instructions](#Test)
+[Technology Used](#Technology)
           
 [Contributing](#Contributing)
           
@@ -56,8 +56,10 @@ This app requires the following packages, [NPM](https://docs.npmjs.com/cli/v6/co
 
 ![image](https://media.giphy.com/media/dv2uov34rxTHudMMKZ/giphy.gif)
 
-## Test Instructions
-There are no known errors in the code.
+## Technology Used 
+Node.js
+Express
+Heroku
           
           
 ## Contributing
